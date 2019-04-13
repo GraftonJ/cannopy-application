@@ -17,4 +17,8 @@ export class AppComponent {
     this.view = 'orders'
   }
 
+  onClickBatchOrders(){
+    this.view = 'batch_orders'
+  }
+
 }
