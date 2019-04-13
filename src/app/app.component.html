@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span>Cannopy</span>
+</mat-toolbar>
+<div>
+  <button label="Batches" (click)="onClickBatches()"> Batches </button>
+  <button label="Orders" (click)="onClickOrders()"> Orders </button>
+  <div *ngIf="view === 'batches'">
+    <app-batch></app-batch>
+  </div>
+  <div *ngIf="view === 'orders'">
+    <app-order></app-order>
+  </div>
+</div>
+<app-batch-orders></app-batch-orders>
+
+<router-outlet></router-outlet>

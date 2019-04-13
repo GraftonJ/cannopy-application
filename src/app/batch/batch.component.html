@@ -1,0 +1,14 @@
+<table style="width:100%">
+  <tr>
+    <th>Type</th>
+    <th>Quantity</th>
+    <th>Size</th>
+    <th>Strain ID</th>
+  </tr>
+  <tr *ngFor="let batch of batches">
+    <td align="center">{{ batch.type }}</td>
+    <td align="center">{{ batch.quantity }} units</td>
+    <td align="center">{{ batch.size}}</td>
+    <td align="center">{{ batch.strains_id }}</td>
+  </tr>
+</table>

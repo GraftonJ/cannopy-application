@@ -1,0 +1,25 @@
+<h2>Enter Order ID</h2>
+<input
+  type="number"
+  [(ngModel)]="orderId"
+  >
+  <button (click)="onGetBatches()">Get Batches for the Order</button>
+
+  <table style="width:100%">
+    <tr>
+      <th>Order ID</th>
+      <th>Dispensary</th>
+      <th>City</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>Quantity</th>
+    </tr>
+    <tr *ngFor="let batch_order of batchOrders">
+      <td align="center">{{ batch_order.orders_id }}</td>
+      <td align="center">{{ batch_order.name }}</td>
+      <td align="center">{{ batch_order.city }}</td>
+      <td align="center">{{ batch_order.type }}</td>
+      <td align="center">{{ batch_order.size}}</td>
+      <td align="center">{{ batch_order.quantity }}</td>
+    </tr>
+  </table>

@@ -1,0 +1,12 @@
+<table style="width:100%">
+  <tr>
+    <th>Order ID</th>
+    <th>Dispensary</th>
+    <th>Location</th>
+  </tr>
+  <tr *ngFor="let order of orders">
+    <td align="center">{{ order.id }}</td>
+    <td align="center">{{ order.name }}</td>
+    <td align="center">{{ order.city }}</td>
+  </tr>
+</table>
